@@ -546,7 +546,7 @@ void YoloObjectDetector::setupNetwork(char *cfgfile, char *weightfile, char *dat
   demoThresh_ = thresh;
   demoHier_ = hier;
   fullScreen_ = fullscreen;
-  printf("YOLO V3\n");
+  printf("YOLO\n");
   net_ = load_network(cfgfile, weightfile, 0);
   set_batch_network(net_, 1);
 }
