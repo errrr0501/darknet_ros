@@ -8,6 +8,7 @@ def generate_launch_description():
   darknet_ros_share_dir = get_package_share_directory('darknet_ros')
   network_param_file = darknet_ros_share_dir + '/config/puzzle.yaml'
 
+  print(darknet_ros_share_dir)
   darknet_ros_launch = IncludeLaunchDescription(
     PythonLaunchDescriptionSource([darknet_ros_share_dir + '/launch/darknet_ros.launch.py']),
       launch_arguments={'network_param_file': network_param_file}.items()
